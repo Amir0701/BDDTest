@@ -48,7 +48,7 @@ public class DiskPage {
 
     @Then("i check {string}")
     public void check(String fileName){
-        String filePath = "C:\\Users\\Amir\\Downloads\\" + fileName;
+        String filePath = "E:\\" + fileName;
         File file = new File(filePath);
         XLS xls = new XLS(file);
         assertThat(xls, XLS.containsText("V0"));
